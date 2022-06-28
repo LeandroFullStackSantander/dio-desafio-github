@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLEX-SHRINK</title>
+    <style>
+        .flex-container{
+            max-width: 350px;
+            display: flex;
+            border: 1px solid black;
+            margin-bottom: 15px;
+        }
+        .item{
+            background-color: orangered;
+            font-size: 24px;
+            text-align: center;
+            margin: 5px;
+        }
+        .shrink0{
+            flex-shrink: 0;
+            flex-basis: 200px;
+        }
+        .shrink1{
+            flex-shrink: 1;
+            flex-basis: 100px;
+        }
+        .shrink2{
+            flex-shrink: 2;
+            flex-basis: 100px;
+        }
+        .shrink3{
+            flex-shrink: 3;
+            flex-basis: 100px;
+        }
+        .fg-1{
+            flex-grow: 1;
+        }
+    </style>
+</head>
+<body>
+    <P>FLEX-SHRINK 1</P>
+    <section class="flex-container">
+        <div class="item shrink1 fg-1">A</div>
+        <div class="item shrink1 fg-1">B</div>
+        <div class="item shrink1 fg-1">C</div>
+        <div class="item shrink1 fg-1">D</div>
+        <div class="item shrink1 fg-1">E</div>
+    </section>
+
+    <section class="flex-container">
+        <div class="item shrink1 fg-1">A</div>
+        <div class="item shrink1 fg-1">BBBBBBBBBBBBBBB</div>
+        <div class="item shrink1 fg-1">C</div>
+        <div class="item shrink1 fg-1">D</div>
+ 
+    </section>
+
+    <P>FLEX-SHRINK 0 / BASIS 100PX</P>
+    <section class="flex-container">
+        <div class="item shrink0 fg-1">A</div>
+        <div class="item shrink0 fg-1">B</div>
+        <div class="item shrink0 fg-1">C</div>
+        <div class="item shrink0 fg-1">D</div>
+        <div class="item shrink0 fg-1">E</div>
+    </section>
+
+    <P>FLEX-SHRINK MIX / BASIS 100PX</P>
+    <section class="flex-container">
+        <div class="item shrink0 fg-1">ATY</div>
+        <div class="item shrink1 fg-1">BUFSDFGSDF</div>
+        <div class="item shrink2 fg-1">CD</div>
+        <div class="item shrink3 fg-1">DDD</div>
+        <div class="item shrink0 fg-1">E</div>
+    </section>
+</body>
+</html>

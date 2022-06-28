@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALIGN-CONTENT</title>
+    <style>
+        .flex-container{
+            height: 400px;
+            display: flex;
+            border: 1px solid black;
+            max-width: 300px;
+            margin: 0 auto;
+            flex-wrap: wrap;
+        }
+        .item{
+            color: rgb(255, 255, 255);
+            background-color: rgb(255, 147, 7);
+            margin: 5px;
+            text-align: center;
+            flex: 1;
+            padding: 5px;
+            border: 2px solid black;
+            font-style: italic;
+            
+
+        }
+        .center{
+            align-content: center;
+        }
+        .stretch{
+            align-content: stretch;
+        }
+        .flex-start{
+            align-content: flex-start;
+        }
+        .flex-end{
+            align-content: flex-end;
+        }
+        .space-between{
+            align-content: space-between;
+        }
+        .space-around{
+            align-content: space-around;
+        }
+    </style>
+</head>
+<body>
+    <p>CENTER</p>
+    <section class="flex-container center">
+        <div class="item"> Lorem Ipsum sobreviveu não só a cinco séculos, 
+            como também ao salto para a editoração</div>
+        <div class="item">Lorem Ipsum sobreviveu não só a cinco séculos, 
+            como também ao salto para a editoração 
+            eletrônica, permanecendo essencialmente inalterado.</div>
+        <div class="item"> quando a Letraset lançou
+            decalques contendo passagens de Lorem Ipsum</div>
+        <div class="item">passou a ser integrado a softwares de</div>
+    </section>
+
+    <p>STRETCH</p>
+    <section class="flex-container stretch">
+        <div class="item"> Lorem Ipsum sobreviveu não só a cinco séculos, 
+            como também ao salto para a editoração</div>
+        <div class="item">Lorem Ipsum sobreviveu não só a cinco séculos, 
+            como também ao salto para a editoração 
+            eletrônica, permanecendo essencialmente inalterado.</div>
+        <div class="item"> quando a Letraset lançou
+            decalques contendo passagens de Lorem Ipsum</div>
+        <div class="item">passou a ser integrado a softwares de</div>
+    </section>
+
+    <p>FLEX-START</p>
+    <section class="flex-container flex-start">
+        <div class="item"> Lorem Ipsum sobreviveu não só a cinco séculos, 
+            como também ao salto para a editoração</div>
+        <div class="item">Lorem Ipsum sobreviveu não só a cinco séculos, 
+            como também ao salto para a editoração 
+            eletrônica, permanecendo essencialmente inalterado.</div>
+        <div class="item"> quando a Letraset lançou
+            decalques contendo passagens de Lorem Ipsum</div>
+        <div class="item">passou a ser integrado a softwares de</div>
+    </section>
+
+    <p>FLEX-END</p>
+    <section class="flex-container flex-end">
+        <div class="item"> Lorem Ipsum sobreviveu não só a cinco séculos, 
+            como também ao salto para a editoração</div>
+        <div class="item">Lorem Ipsum sobreviveu não só a cinco séculos, 
+            como também ao salto para a editoração 
+            eletrônica, permanecendo essencialmente inalterado.</div>
+        <div class="item"> quando a Letraset lançou
+            decalques contendo passagens de Lorem Ipsum</div>
+        <div class="item">passou a ser integrado a softwares de</div>
+    </section>
+
+    <p>SPACE-BETWEEN</p>
+    <section class="flex-container space-between">
+        <div class="item"> Lorem Ipsum sobreviveu não só a cinco séculos, 
+            como também ao salto para a editoração</div>
+        <div class="item">Lorem Ipsum sobreviveu não só a cinco séculos, 
+            como também ao salto para a editoração 
+            eletrônica, permanecendo essencialmente inalterado.</div>
+        <div class="item"> quando a Letraset lançou
+            decalques contendo passagens de Lorem Ipsum</div>
+        <div class="item">passou a ser integrado a softwares de</div>
+    </section>
+    
+    <p>SPACE-AROUND</p>
+    <section class="flex-container space-around">
+        <div class="item"> Lorem Ipsum sobreviveu não só a cinco séculos, 
+            como também ao salto para a editoração</div>
+        <div class="item">Lorem Ipsum sobreviveu não só a cinco séculos, 
+            como também ao salto para a editoração 
+            eletrônica, permanecendo essencialmente inalterado.</div>
+        <div class="item"> quando a Letraset lançou
+            decalques contendo passagens de Lorem Ipsum</div>
+        <div class="item">passou a ser integrado a softwares de</div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ORDER</title>
+    <STYle>
+        .flex-container{
+            display: flex;
+            max-width: 350px;
+            border: 1px solid black;
+            margin-bottom: 25px;
+        }
+        .item{
+            flex: 1;
+            background: brown;
+            color: white;
+            text-align: center;
+            font-size: 24px;
+            margin: 5px;
+        }
+        .order1{
+            order: 1;
+        }
+        .order2{
+            order: 2;
+        }
+        .order3{
+            order: 3;
+        }
+        .order4{
+            order: 4;
+        }
+        .direction{
+            flex-direction: column;
+        }
+    </STYle>
+</head>
+<body>
+
+    <H1>ROW</H1>
+
+    <p>ORDER: 0</p>
+    <section class="flex-container">
+        <div class="item">1R</div>
+        <div class="item">2YT</div>
+        <div class="item">3XS</div>
+        <div class="item">4MN</div>
+    </section>
+
+    <p>ORDER: DIFERENTES</p>
+    <section class="flex-container">
+        <div class="item order1">1XR</div>
+        <div class="item order4">2TY</div>
+        <div class="item order2">3N</div>
+        <div class="item order3">4M</div>
+    </section>
+
+    <h1>COLUMN</h1>
+
+    <p>ORDER: MISTURADAS</p>
+    <section class="flex-container direction">
+        <div class="item order3">1XY</div>
+        <div class="item order4">2R</div>
+        <div class="item order2">3N</div>
+        <div class="item order1">4M</div>
+    </section>
+
+    <p>ORDER: MISTURADAS</p>
+    <section class="flex-container direction">
+        <div class="item order3">1WE</div>
+        <div class="item order4">2LK</div>
+        <div class="item order1">3F</div>
+        <div class="item order2">4K</div>
+    </section>
+</body>
+</html>

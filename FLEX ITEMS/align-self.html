@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALIGN-SELF</title>
+    <style>
+        .flex-container{
+            display: flex;
+            max-width: 400px;
+            border: 2px solid black;
+            margin-bottom: 10px;
+            
+            
+        }
+        .align-container{
+            align-items: center;
+        }
+        .item{
+            background-color: brown;
+            color: white;
+            font-size: 24px;
+            text-align: center;
+            margin: 5PX;
+        }
+        .center{
+            align-self: center;
+        }
+        .start{
+            align-items: flex-start;
+        }
+        .end{
+            align-self: flex-end;
+        }
+        .baseline{
+            align-self: baseline;
+        }
+        .stretch{
+            align-self: stretch;
+        }
+        .auto{
+            align-self: auto;
+        }
+        .direction{
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>ROW</h1>
+    <p></p>
+    
+    <section class="flex-container align-container">
+        <div class="item auto">AAA</div>
+        <div class="item auto">12345</div>
+        <div class="item auto">GFMDTDYHSRSRTYHWR</div>
+        <div class="item auto">565856777</div>
+    </section>
+
+    <h1></h1>
+    <p></p>
+    
+    <section class="flex-container">
+        <div class="item center">AAA</div>
+        <div class="item start">12345</div>
+        <div class="item stretch">GFMDTDYHSRSRTYHWR</div>
+        <div class="item end">565856777</div>
+    </section>
+
+    <h1></h1>
+    <p></p>
+    
+    <section class="flex-container">
+        <div class="item center">AAA</div>
+        <div class="item center">145y6546546546</div>
+        <div class="item start">GFR646546546546546</div>
+        <div class="item end">57767657657567567567567657657</div>
+    </section>
+
+    <h1>COLUMN</h1>
+    <p></p>
+    
+    <section class="flex-container align-container direction">
+        <div class="item auto">AAA</div>
+        <div class="item auto">12345</div>
+        <div class="item auto">GFMDTDYHSRSRTYHWR</div>
+        <div class="item auto">565856777</div>
+    </section>
+
+    <h1></h1>
+    <p></p>
+    
+    <section class="flex-container direction">
+        <div class="item center">AAA</div>
+        <div class="item start">12345</div>
+        <div class="item stretch">GFMDTDYHSRSRTYHWR</div>
+        <div class="item end">565856777</div>
+    </section>
+
+    <h1></h1>
+    <p></p>
+    
+    <section class="flex-container direction">
+        <div class="item center">AAA</div>
+        <div class="item center">145y6546546546</div>
+        <div class="item start">GFR646546546546546</div>
+        <div class="item end">57767657657567567567567657657</div>
+    </section>
+
+
+    
+
+ 
+</body>
+</html>
